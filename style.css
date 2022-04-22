@@ -16,6 +16,12 @@ body{
 
 /* Header ---------------- */
 
+.title{
+    text-decoration: none;
+    color: #01374d;
+    font-weight: 700;
+}
+
 .header{
    
     width: 100%;
@@ -94,10 +100,11 @@ body{
 
 .main{
     min-height: auto;
+    margin-bottom: 20vh;
 }
 .container{
     width: 70%;
-    margin: 7rem auto 0;
+    margin: 10rem auto 0;
     padding: 0 0.5rem;
    
 }
@@ -124,7 +131,10 @@ letter-spacing: 0.1rem;
 .contact-info--link {
     font-size: 24px;
 }
+/* main ------------------------------ */
 
+
+/* media ----------------------------- */
 @media screen and (max-width: 900px) {
     .contact-info {
         font-size: 16px;
@@ -142,6 +152,7 @@ letter-spacing: 0.1rem;
     .title {
         margin: 0 auto;
         font-weight: 900;
+       
     }
     .contact-info:focus + .dropdown-menu {
         width: 90%;
@@ -169,4 +180,29 @@ letter-spacing: 0.1rem;
     .tip {
         text-align: center;
     }
+}
+
+/* media ----------------------- END*/
+
+
+/* added from js (insertAdjacentHTML()) */
+.game-links{
+    margin-top: 2rem;
+    color: #005474;
+    font-size: 24px;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    transition: all 150ms ease-in;
+}
+.game-links:hover{
+    color: #01374d;
+    font-weight: 700;
+}
+
+.span{
+    margin-top: 2rem;
+    color: #000000;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.1rem;
 }

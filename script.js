@@ -1,6 +1,6 @@
 "use strict"
 // all games are imported here
-import {minesweeper} from './Right-side-C/minesweeper.js'
+import {minesweeper} from './Games-c/minesweeper.js'
 
 
 // selectors
@@ -20,9 +20,13 @@ let gameLoad = {
 nameClick.forEach(el => el.addEventListener('click', (e) => {
     container.innerHTML = '';
     if(e.target.classList.contains('C'))
-     {   container.insertAdjacentHTML( "afterbegin",`<a href="#" class="game-links" data-set=0>Minesweeper</a>`);}
+     {   container.insertAdjacentHTML( "afterbegin",
+     `<span class="span">You Can Currently Play Following Games: <br> </span>
+     <a href="#" class="game-links" data-set=0>Minesweeper</a>`);}
     else{
-        container.insertAdjacentHTML("afterbegin", `<a a href="#" class="game-links" data-set=1>tic tac toe</a>`) 
+        container.insertAdjacentHTML("afterbegin",
+         `<span class="span">You Can Currently Play Following Games: <br> </span>
+        <a a href="#" class="game-links" data-set=1>tic tac toe</a>`) 
     }
 
 }))
