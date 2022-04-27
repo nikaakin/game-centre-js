@@ -1,6 +1,6 @@
 "use strict"
 // all games are imported here
-import {minesweeper} from './Games-c/minesweeper.js'
+import {minesweeper} from './Games-c/Minesweeper/minesweeper.js'
 
 
 // selectors
