@@ -12,7 +12,7 @@ let gameNumber;
 
 // game load helper (switch)
 let gameLoad = {
-    "0": function () {minesweeper()},
+    "0": function () {minesweeper([8,8,10,54]);},
     "1": function () {},
  }
  
@@ -38,4 +38,5 @@ container.addEventListener('click', (e) => {
     gameNumber = e.target.dataset.set;
     gameLoad[gameNumber]();
 })
+
 
