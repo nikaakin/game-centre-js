@@ -174,7 +174,7 @@ const game = function (e) {
   </div>`);
 
 container.insertAdjacentHTML("beforeend", 
-  `<div class="minesweeper-level-wrapper">
+  `<div class="minesweeper-level-wrapper" style="height:${window.innerHeight/15}px">
   <button class="minesweeper-game-level" data-num ="0">8x8 board with 10 mines  </button> 
   <button class="minesweeper-game-level" data-num ="1">13x15 board with 40 mines  </button>
   <button class="minesweeper-game-level" data-num ="2">16x20 board with 70 mines   </button>
